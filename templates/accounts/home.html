@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}ホーム{% endblock %}
+
+{% block content %}
+{% if messages %}
+    {% for message in messages %}
+        <div class="">{{ message.message }}</div>
+    {% endfor %}
+{% endif %}
+ホーム画面
+{% endblock %}
